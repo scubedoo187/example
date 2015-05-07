@@ -100,18 +100,10 @@ header {
         background-color: $white;
         @include window;
     }
-    .rightCol {
-        background-color: $white;
-        position: fixed;
-        top: 55px;
-        right: 390px;
-        width: 18%;
-        @include window;
-    }
 }
 nav {
-    vertical-align: top;
     display: inline-block;
+    vertical-align: top;
     width: 162px;
     height: auto;
     margin-top: 12px;
@@ -119,12 +111,23 @@ nav {
     box-sizing: border-box;
 }
 .column {
-    vertical-align: top;
     display: inline-block;
+    vertical-align: top;
     margin-top: 12px;
     margin-left: 10px;
     width: 42.3%;
     box-sizing: border-box;
+    @include window;
+}
+.rightCol {
+    display: inline-block;
+    position: fixed;
+    vertical-align: top;
+    margin-top: 12px;
+    margin-left: 10px;
+    background-color: $white;
+    width: 25%;
+    @include window;
 }
 #facebook-icon {
     background: $white;

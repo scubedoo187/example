@@ -60,25 +60,10 @@ header {
     -webkit-box-shadow: 0, 1px, 2px, #D0D1D5;
     -moz-box-shadow: 0, 1px, 2px, #D0D1D5;
     box-shadow: 0, 1px, 2px, #D0D1D5; }
-  .main .rightCol {
-    background-color: #FFFFFF;
-    position: fixed;
-    top: 55px;
-    right: 390px;
-    width: 18%;
-    border-top: 1px #E1E2E3;
-    border-left: 1px #E1E2E3;
-    border-right: 1px #E1E2E3;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0, 1px, 2px, #D0D1D5;
-    -moz-box-shadow: 0, 1px, 2px, #D0D1D5;
-    box-shadow: 0, 1px, 2px, #D0D1D5; }
 
 nav {
-  vertical-align: top;
   display: inline-block;
+  vertical-align: top;
   width: 162px;
   height: auto;
   margin-top: 12px;
@@ -86,12 +71,39 @@ nav {
   box-sizing: border-box; }
 
 .column {
-  vertical-align: top;
   display: inline-block;
+  vertical-align: top;
   margin-top: 12px;
   margin-left: 10px;
   width: 42.3%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border-top: 1px #E1E2E3;
+  border-left: 1px #E1E2E3;
+  border-right: 1px #E1E2E3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0, 1px, 2px, #D0D1D5;
+  -moz-box-shadow: 0, 1px, 2px, #D0D1D5;
+  box-shadow: 0, 1px, 2px, #D0D1D5; }
+
+.rightCol {
+  display: inline-block;
+  position: fixed;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-left: 10px;
+  background-color: #FFFFFF;
+  width: 25%;
+  border-top: 1px #E1E2E3;
+  border-left: 1px #E1E2E3;
+  border-right: 1px #E1E2E3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0, 1px, 2px, #D0D1D5;
+  -moz-box-shadow: 0, 1px, 2px, #D0D1D5;
+  box-shadow: 0, 1px, 2px, #D0D1D5; }
 
 #facebook-icon {
   background: #FFFFFF;
