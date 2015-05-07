@@ -97,6 +97,19 @@ header {
       -webkit-box-shadow: 0, 1px, 2px, #D0D1D5;
       -moz-box-shadow: 0, 1px, 2px, #D0D1D5;
       box-shadow: 0, 1px, 2px, #D0D1D5; }
+    .main .container .message {
+      display: inline-block;
+      position: fixed;
+      vertical-align: top;
+      top: 44px;
+      right: -1px;
+      box-sizing: border-box;
+      width: 207px;
+      background-color: #E9EAED;
+      border: 1px solid #CCCCCC; }
+      .main .container .message ul li {
+        padding: 10px;
+        box-sizing: border-box; }
 
 ul {
   list-style-type: none; }

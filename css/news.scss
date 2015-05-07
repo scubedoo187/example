@@ -120,6 +120,24 @@ header {
             width: 25%;
             @include window;
         }
+        .message {
+            display: inline-block;
+            position: fixed;
+            vertical-align: top;
+            top: 44px;
+            right: -1px;
+            box-sizing: border-box;
+            width: 207px;
+            background-color: $lightgray;
+            border: 1px solid #CCCCCC;
+
+            ul {
+                li {
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+            }
+        }
     }
 }
 
