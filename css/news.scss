@@ -85,50 +85,52 @@ header {
     .container {
         position: relative;
 
-        ul {
-            list-style-type: none;
+        nav {
+            display: inline-block;
+            vertical-align: top;
+            width: 162px;
+            height: auto;
+            margin-top: 12px;
+            background-color: yellow;
+            box-sizing: border-box;
 
-            li {
-                a {
-                    text-decoration: none;
-                }
+        }
+        .column {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 12px;
+            margin-left: 10px;
+            width: 42.3%;
+            box-sizing: border-box;
+            @include window;
+
+            section {
+                margin-bottom: 12px;
+                background-color: $white;
+                @include window;
             }
         }
+        .rightCol {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 12px;
+            margin-left: 10px;
+            background-color: $white;
+            box-sizing: border-box;
+            width: 25%;
+            @include window;
+        }
     }
-    section {
-        margin-bottom: 12px;
-        background-color: $white;
-        @include window;
-    }
 }
-nav {
-    display: inline-block;
-    vertical-align: top;
-    width: 162px;
-    height: auto;
-    margin-top: 12px;
-    background-color: yellow;
-    box-sizing: border-box;
+
+ul {
+    list-style-type: none;
 }
-.column {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 12px;
-    margin-left: 10px;
-    width: 42.3%;
-    box-sizing: border-box;
-    @include window;
+
+a {
+    text-decoration: none;
 }
-.rightCol {
-    display: inline-block;
-    position: fixed;
-    vertical-align: top;
-    margin-top: 12px;
-    margin-left: 10px;
-    background-color: $white;
-    width: 25%;
-    @include window;
-}
+
 #facebook-icon {
     background: $white;
     text-indent: -999em;
@@ -167,4 +169,31 @@ nav {
     border-color: #141823;
     border: 1px;
     padding: 2px 0px 2px 8px;
+}
+#magnifying-glass
+{
+    font-size: 1.6em;
+    display: inline-block;
+    width: 0.3em;
+    height: 0.3em;
+    border: 0.1em solid #A6AAB3;
+    position: relative;
+    border-radius: 0.35em;
+    background: white;
+}
+#magnifying-glass::before
+{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -0.21em;
+    bottom: -0.15em;
+    border-width: 0;
+    background: #A6AAB3;
+    width: 0.25em;
+    height: 0.1em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
