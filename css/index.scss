@@ -1,0 +1,287 @@
+$blue: #3A5795;
+$white: #FFFFFF;
+$gray: #D3D8E8;
+$black: #141823;
+$textColor1: #0E385F;
+$default-font: helvetica, arial, 'lucida grande', sans-serif;
+$fontset_1: 'Freight Sans Bold', 'lucida grande', tahoma, verdana, arial, sans-serif;
+
+@mixin inputbox {
+    box-sizing: border-box;
+    color: #999;
+    cursor: text;
+    height: 39px;
+    line-height: 24px;
+    text-align: left;
+    top: 0px;
+    font: {
+        family: $default-font;
+        size: 18px;
+    }
+    padding: {
+        bottom: 8px;
+        left: 10px;
+        right: 10px;
+        top: 8px;
+    }
+}
+
+@mixin linear-gradient($from, $to) {
+    background-color: $to;
+    background-image: -moz-linear-gradient($from, $to);
+    background-image: -o-linear-gradient($from, $to);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+    background-image: -webkit-linear-gradient($from, $to);
+    background-image: -ms-linear-gradient($from, $to);
+    background-image: linear-gradient($from, $to);
+}
+
+@mixin shadow($x, $y, $blur, $color) {
+    -webkit-box-shadow: $x, $y, $blur, $color;
+    -moz-box-shadow: $x, $y, $blur, $color;
+    box-shadow: $x, $y, $blur, $color;
+}
+
+body {
+    margin: 0;
+    font: {
+        size: 12px;
+        family: $default-font;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.topbar {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    width: 100%;
+    height: 83px;
+    background-color: $blue;
+
+    .topContent {
+        display: inline-block;
+        width: 63.5%;
+        margin: {
+            left: 18%;
+            right: 18%;
+        }
+
+        .left {
+            float: left;
+            width: 61%;
+            margin-top: 22px;
+        }
+        .right {
+            line-height: 1.34;
+            float: right;
+            width: 39%;
+            margin-top: 10px;
+        }
+    }
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 592px;
+    @include linear-gradient($white, $gray);
+
+    .container {
+        width: 63.5%;
+        margin: {
+            left: 18%;
+            right: 18%;
+        }
+
+        .leftCol {
+            float: left;
+            width: 61%;
+
+            div {
+                color: $textColor1;
+                font: {
+                    size: 20px;
+                    weight: bold;
+                }
+                line-height: 29px;
+                margin-top:40px;
+                width: 450px;
+            }
+        }
+        .rightCol {
+            float: right;
+            width: 39%;
+
+            .headtext {
+                color: $black;
+                display: block;
+                height: 81px;
+                width: 399px;
+                text-align: left;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font: {
+                    family: $default-font;
+                    size: 12px;
+                }
+
+            }
+            .regist {
+                display: block;
+                height: 471px;
+                width: 399px;
+
+                .inline-inputbox {
+                    display: inline-block;
+                    width: 194px;
+                    @include inputbox;
+                }
+                .inputbox {
+                    display: block;
+                    width: 399px;
+                    @include inputbox;
+                }
+                .radiobox {
+                    margin-top: 10px;
+                    height: 32px;
+
+                    .element {
+                        padding: 5px;
+                        margin-left: 4px;
+                    }
+                }
+                .policy {
+                    color: #777;
+                    display: block;
+                    font: {
+                        family: $default-font;
+                        size: 11px;
+                    }
+                    height: 28px;
+                    width: 316px;
+                    margin: {
+                        bottom: 11px;
+                        left: 0px;
+                        right: 0px;
+                        top: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+.text1 {
+    color: $black;
+    margin-bottom: 5px;
+    font: {
+        family: $fontset_1;
+        size: 36px;
+        weight: normal;
+    }
+}
+
+.text2 {
+    color: $black;
+    line-height: 28px;
+    font: {
+        family: $fontset_1;
+        size: 19px;
+        weight: normal;
+    }
+}
+
+.submit {
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    -webkit-box-shadow: inset 0 1px 1px #A4E388;
+    background: {
+        attachment: scroll;
+        clip: border-box;
+        color: #69A74E;
+        image: -webkit-linear-gradient(top, #67AE55, #578843);
+        origin: padding-box;
+        size: auto;
+    }
+    border: {
+        bottom: {
+            color: #2C5115;
+            left-radius: 5px;
+            right-radius: 5px;
+            style: solid;
+            width: 1px;
+        }
+        image: {
+            outset: 0px;
+            repeat: stretch;
+            slice: 100%;
+            source: none;
+            width: 1;
+        }
+        left: {
+            color: #3B6E22;
+            style: solid;
+            width: 1px;
+        }
+        right: {
+            color: #3B6E22;
+            style: solid;
+            width: 1px;
+        }
+        top: {
+            color: #3B6E22;
+            left-radius: 5px;
+            right-radius: 5px;
+            style: solid;
+            width: 1px;
+        }
+    }
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    font: {
+        family: $default-font;
+        size: 12px;
+        style: normal;
+        variant: normal;
+        weight: bold;
+    }
+    height: 31px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    margin: {
+        bottom: 10px;
+        left: 0px;
+        right: 0px;
+        top: 10px;
+    }
+    min-width: 194px;
+    padding: {
+        bottom: 7px;
+        left: 20px;
+        right: 20px;
+        top: 7px;
+    }
+    position: relative;
+    text: {
+        align: center;
+        indent: 0px;
+        rendering: auto;
+        shadow: 0 1px 2px rgba(190, 167, 167, 0.5);
+        transform: none;
+    }
+    width: 194px;
+}
+.submit::hover {
+    background-color: #ddd;
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    height: 155px;
+    background-color: $white;
+}

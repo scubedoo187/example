@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: helvetica, arial, "lucida grande", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.topbar {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  width: 100%;
+  height: 83px;
+  background-color: #3A5795; }
+  .topbar .topContent {
+    display: inline-block;
+    width: 63.5%;
+    margin-left: 18%;
+    margin-right: 18%; }
+    .topbar .topContent .left {
+      float: left;
+      width: 61%;
+      margin-top: 22px; }
+    .topbar .topContent .right {
+      line-height: 1.34;
+      float: right;
+      width: 39%;
+      margin-top: 10px; }
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 592px;
+  background-color: #D3D8E8;
+  background-image: -moz-linear-gradient(#FFFFFF, #D3D8E8);
+  background-image: -o-linear-gradient(#FFFFFF, #D3D8E8);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D3D8E8));
+  background-image: -webkit-linear-gradient(#FFFFFF, #D3D8E8);
+  background-image: -ms-linear-gradient(#FFFFFF, #D3D8E8);
+  background-image: linear-gradient(#FFFFFF, #D3D8E8); }
+  .main .container {
+    width: 63.5%;
+    margin-left: 18%;
+    margin-right: 18%; }
+    .main .container .leftCol {
+      float: left;
+      width: 61%; }
+      .main .container .leftCol div {
+        color: #0E385F;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 29px;
+        margin-top: 40px;
+        width: 450px; }
+    .main .container .rightCol {
+      float: right;
+      width: 39%; }
+      .main .container .rightCol .headtext {
+        color: #141823;
+        display: block;
+        height: 81px;
+        width: 399px;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: helvetica, arial, "lucida grande", sans-serif;
+        font-size: 12px; }
+      .main .container .rightCol .regist {
+        display: block;
+        height: 471px;
+        width: 399px; }
+        .main .container .rightCol .regist .inline-inputbox {
+          display: inline-block;
+          width: 194px;
+          box-sizing: border-box;
+          color: #999;
+          cursor: text;
+          height: 39px;
+          line-height: 24px;
+          text-align: left;
+          top: 0px;
+          font-family: helvetica, arial, "lucida grande", sans-serif;
+          font-size: 18px;
+          padding-bottom: 8px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 8px; }
+        .main .container .rightCol .regist .inputbox {
+          display: block;
+          width: 399px;
+          box-sizing: border-box;
+          color: #999;
+          cursor: text;
+          height: 39px;
+          line-height: 24px;
+          text-align: left;
+          top: 0px;
+          font-family: helvetica, arial, "lucida grande", sans-serif;
+          font-size: 18px;
+          padding-bottom: 8px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 8px; }
+        .main .container .rightCol .regist .radiobox {
+          margin-top: 10px;
+          height: 32px; }
+          .main .container .rightCol .regist .radiobox .element {
+            padding: 5px;
+            margin-left: 4px; }
+        .main .container .rightCol .regist .policy {
+          color: #777;
+          display: block;
+          font-family: helvetica, arial, "lucida grande", sans-serif;
+          font-size: 11px;
+          height: 28px;
+          width: 316px;
+          margin-bottom: 11px;
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-top: 11px; }
+
+.text1 {
+  color: #141823;
+  margin-bottom: 5px;
+  font-family: "Freight Sans Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 36px;
+  font-weight: normal; }
+
+.text2 {
+  color: #141823;
+  line-height: 28px;
+  font-family: "Freight Sans Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 19px;
+  font-weight: normal; }
+
+.submit {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-box-shadow: inset 0 1px 1px #A4E388;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #69A74E;
+  background-image: -webkit-linear-gradient(top, #67AE55, #578843);
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: #2C5115;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: #3B6E22;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #3B6E22;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #3B6E22;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: helvetica, arial, "lucida grande", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  height: 31px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  min-width: 194px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: 0 1px 2px rgba(190, 167, 167, 0.5);
+  text-transform: none;
+  width: 194px; }
+
+.submit::hover {
+  background-color: #ddd;
+  font-size: 14px; }
+
+footer {
+  width: 100%;
+  height: 155px;
+  background-color: #FFFFFF; }
+
+/*# sourceMappingURL=index.css.map */
