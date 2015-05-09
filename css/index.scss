@@ -276,12 +276,103 @@ a {
     width: 194px;
 }
 .submit::hover {
-    background-color: #ddd;
-    font-size: 14px;
+    background-color: #ddd; // more brighter
+}
+
+.message {
+    border-top: {
+        color: #A0A9C0;
+        style: solid;
+        width: 1px;
+    }
+    color: #666;
+    font: {
+        family: $default-font;
+        size: 13px;
+        weight: bold;
+    }
+    height: 17px;
+    width: 399px;
+    line-height: 17px;
+    margin-top: 10px;
+    padding-top: 15px;
 }
 
 footer {
     width: 100%;
     height: 155px;
-    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+        height: 155px;
+
+        .language {
+            width: 980px;
+            border-bottom: {
+                color: #A0A9C0;
+                style: solid;
+                width: 1px;
+            }
+
+            ul {
+                padding-left: 0px;
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+
+                .padding {
+                    padding-left: 10px;
+                }
+
+                li {
+                    display: inline;
+                    list-style-type: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .showMore {
+        background-color: #E9EAED;
+        padding: {
+            left: 6px;
+            right: 6px;
+            bottom: 2px;
+        }
+    }
+
+    .contentInfo {
+        margin-top: 10px;
+        width: 980px;
+
+        table {
+            width: 693px;
+            height: 60px;
+
+            tr {
+                height: 20px;
+
+                td {
+                    padding: 0px;
+                }
+                .padding {
+                    padding: {
+                        left: 10px;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        color: #737373;
+        height: 30px;
+        margin: {
+            top: 20px;
+            bottom: 20px;
+        }
+    }
 }
