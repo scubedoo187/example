@@ -15,14 +15,24 @@
     <div class="right">
       <form action="post">
         <table cellspacing="0">
-          <tr><td><label for="email">이메일 또는 휴대폰</label></td>
-            <td><label for="passwd">비밀번호</label></td></tr>
-          <tr><td><input type="text" id="email" tabindex="1"></td>
-            <td><input type="password" id="passwd" tabindex="2"></td>
-            <td><input type="submit" value="로그인" tabindex="4"></td></tr>
-          <tr><td><input type="checkbox" tabindex="3" id="persist">
-              <label for="persist">로그인 상태 유지</label></td>
-            <td><a href="#">로그인 정보를 잊으셧나요?</a></td></tr>
+          <tr>
+            <td><label class="email" for="email">이메일 또는 휴대폰</label></td>
+            <td><label class="passwd" for="passwd">비밀번호</label></td>
+          </tr>
+          <tr>
+            <td><input class="inputbox-top" type="text" id="email" tabindex="1"></td>
+            <td><input class="inputbox-top" type="password" id="passwd" tabindex="2"></td>
+            <td>
+              <label class="button-top" for="btn">
+                <input type="submit" id="btn" value="로그인" tabindex="4">
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" tabindex="3" id="persist">
+              <label class="toptext1" for="persist">로그인 상태 유지</label></td>
+            <td><a href="#" class="toptext2">로그인 정보를 잊으셧나요?</a></td>
+          </tr>
         </table>
       </form>
     </div>

@@ -2,7 +2,9 @@ $blue: #3A5795;
 $white: #FFFFFF;
 $gray: #D3D8E8;
 $black: #141823;
+$textColor-blue: #3B5598;
 $textColor1: #0E385F;
+$textColor-top: #8A9CC0;
 $default-font: helvetica, arial, 'lucida grande', sans-serif;
 $fontset_1: 'Freight Sans Bold', 'lucida grande', tahoma, verdana, arial, sans-serif;
 
@@ -52,6 +54,11 @@ body {
 
 a {
     text-decoration: none;
+    color: $textColor-blue;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .topbar {
@@ -79,6 +86,166 @@ a {
             float: right;
             width: 39%;
             margin-top: 10px;
+
+            form {
+                table {
+                    tr {
+                        width: 390px;
+                        height: 21px;
+                        box-sizing: border-box;
+                        td {
+                            width: 150px;
+                            height: 23px;
+                            padding-left: 14px;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+                .email {
+                    color: $white;
+                }
+                .passwd {
+                    color: $white;
+                }
+                .button-top {
+                    width: 33.844px;
+                    height: 16px;
+                    background: none;
+                    border: 0px;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-weight: bold;
+                    line-height: 13px;
+                    margin: 0;
+                    padding: 1px 0 2px;
+                    white-space: nowrap;
+                    background-color: #5B74A8;
+                    background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yP/r/udGFHoXFdsP.png);
+                    background-position: 0px -49px;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    border: {
+                        bottom: {
+                            color: #1A356E;
+                            style: solid;
+                            width: 1px;
+                        }
+                        collapse: separate;
+                        image: {
+                            outset: 0px;
+                            repeat: stretch;
+                            slice: 100%;
+                            source: none;
+                            width: 1;
+                        }
+                        left: {
+                            color: #29447E;
+                            style: solid;
+                            width: 1px;
+                        }
+                        right: {
+                            color: #29447E;
+                            style: solid;
+                            width: 1px;
+                        }
+                        top: {
+                            color: #2F477A;
+                            style: solid;
+                            width: 1px;
+                        }
+                    }
+                    color: #666;
+                    cursor: pointer;
+                    display: inline-block;
+                    font: {
+                        family: $default-font;
+                        size: 12px;
+                        weight: bold;
+                    }
+                    line-height: 13px;
+                    padding: {
+                        bottom: 2px;
+                        left: 6px;
+                        right: 6px;
+                        top: 2px;
+                    }
+                    text-align: center;
+                    text-decoration: none;
+                    vertical-align: top;
+                    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+
+                    #btn {
+                        box-sizing: border-box;
+                        width: 33.844px;
+                        height: 13px;
+                        background-clip: border-box;
+                        background-origin: padding-box;
+                        background-attachment: scroll;
+                        background-color: transparent;
+                        background-image: none;
+                        background-size: auto;
+                        border: 0px;
+                        border-collapse: separate;
+                        display: inline-block;
+                        font: {
+                            family: $default-font;
+                            size: 12px;
+                            style: normal;
+                            variant: normal;
+                            weight: bold;
+                        }
+                        letter-spacing: normal;
+                        line-height: 13px;
+                        margin: {
+                            bottom: 0px;
+                            left: 0px;
+                            right: 0px;
+                            top: 0px;
+                        }
+                        padding: {
+                            bottom: 2px;
+                            left: 0px;
+                            right: 0px;
+                            top: 1px;
+                        }
+                        text: {
+                            align: center;
+                            indent: 0px;
+                            rendering: auto;
+                            shadow: none;
+                            transform: none;
+                        }
+                        color: $white;
+                        white-space: nowrap;
+                        word-spacing: 0px;
+                        cursor: pointer;
+                    }
+                    &:active {
+                        border-color: $black;
+                        border: 2px;
+                    }
+                }
+                .inputbox-top {
+                    width: 142px;
+                    height: 14px;
+                    border: 1px;
+                    border-style: solid;
+                    border-color: #1D2A5B;
+                    padding: 3px;
+                }
+                .toptext1 {
+                    margin: 3px;
+                    color: $textColor-top;
+                    cursor: pointer;
+                }
+                .toptext2 {
+                    color: $textColor-top;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
 }
@@ -274,9 +441,10 @@ a {
         transform: none;
     }
     width: 194px;
-}
-.submit::hover {
-    background-color: #ddd; // more brighter
+
+    &:hover {
+        background-color: #ddd; // more brighter
+    }
 }
 
 .message {

@@ -4,7 +4,10 @@ body {
   font-family: helvetica, arial, "lucida grande", sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3B5598; }
+  a:hover {
+    text-decoration: underline; }
 
 .topbar {
   display: -webkit-flex;
@@ -26,6 +29,125 @@ a {
       float: right;
       width: 39%;
       margin-top: 10px; }
+      .topbar .topContent .right form table tr {
+        width: 390px;
+        height: 21px;
+        box-sizing: border-box; }
+        .topbar .topContent .right form table tr td {
+          width: 150px;
+          height: 23px;
+          padding-left: 14px;
+          box-sizing: border-box; }
+      .topbar .topContent .right form .email {
+        color: #FFFFFF; }
+      .topbar .topContent .right form .passwd {
+        color: #FFFFFF; }
+      .topbar .topContent .right form .button-top {
+        width: 33.844px;
+        height: 16px;
+        background: none;
+        border: 0px;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 13px;
+        margin: 0;
+        padding: 1px 0 2px;
+        white-space: nowrap;
+        background-color: #5B74A8;
+        background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yP/r/udGFHoXFdsP.png);
+        background-position: 0px -49px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        border-bottom-color: #1A356E;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-collapse: separate;
+        border-image-outset: 0px;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: #29447E;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-right-color: #29447E;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-top-color: #2F477A;
+        border-top-style: solid;
+        border-top-width: 1px;
+        color: #666;
+        cursor: pointer;
+        display: inline-block;
+        font-family: helvetica, arial, "lucida grande", sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 13px;
+        padding-bottom: 2px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 2px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
+        .topbar .topContent .right form .button-top #btn {
+          box-sizing: border-box;
+          width: 33.844px;
+          height: 13px;
+          background-clip: border-box;
+          background-origin: padding-box;
+          background-attachment: scroll;
+          background-color: transparent;
+          background-image: none;
+          background-size: auto;
+          border: 0px;
+          border-collapse: separate;
+          display: inline-block;
+          font-family: helvetica, arial, "lucida grande", sans-serif;
+          font-size: 12px;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: bold;
+          letter-spacing: normal;
+          line-height: 13px;
+          margin-bottom: 0px;
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-top: 0px;
+          padding-bottom: 2px;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 1px;
+          text-align: center;
+          text-indent: 0px;
+          text-rendering: auto;
+          text-shadow: none;
+          text-transform: none;
+          color: #FFFFFF;
+          white-space: nowrap;
+          word-spacing: 0px;
+          cursor: pointer; }
+        .topbar .topContent .right form .button-top:active {
+          border-color: #141823;
+          border: 2px; }
+      .topbar .topContent .right form .inputbox-top {
+        width: 142px;
+        height: 14px;
+        border: 1px;
+        border-style: solid;
+        border-color: #1D2A5B;
+        padding: 3px; }
+      .topbar .topContent .right form .toptext1 {
+        margin: 3px;
+        color: #8A9CC0;
+        cursor: pointer; }
+      .topbar .topContent .right form .toptext2 {
+        color: #8A9CC0;
+        cursor: pointer; }
+        .topbar .topContent .right form .toptext2:hover {
+          text-decoration: underline; }
 
 .main {
   position: relative;
@@ -192,9 +314,8 @@ a {
   text-shadow: 0 1px 2px rgba(190, 167, 167, 0.5);
   text-transform: none;
   width: 194px; }
-
-.submit::hover {
-  background-color: #ddd; }
+  .submit:hover {
+    background-color: #ddd; }
 
 .message {
   border-top-color: #A0A9C0;
