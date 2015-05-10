@@ -16,10 +16,10 @@ a {
   height: 83px;
   background-color: #3A5795; }
   .topbar .topContent {
-    display: inline-block;
-    width: 63.5%;
-    margin-left: 18%;
-    margin-right: 18%; }
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    width: 980px;
+    margin: 0 auto; }
     .topbar .topContent .left {
       float: left;
       width: 61%;
@@ -151,7 +151,7 @@ a {
 
 .main {
   position: relative;
-  width: 100%;
+  min-width: 980px;
   height: 592px;
   background-color: #D3D8E8;
   background-image: -moz-linear-gradient(#FFFFFF, #D3D8E8);
@@ -161,12 +161,11 @@ a {
   background-image: -ms-linear-gradient(#FFFFFF, #D3D8E8);
   background-image: linear-gradient(#FFFFFF, #D3D8E8); }
   .main .container {
-    width: 63.5%;
-    margin-left: 18%;
-    margin-right: 18%; }
+    width: 980px;
+    margin: 0 auto; }
     .main .container .leftCol {
       float: left;
-      width: 61%; }
+      width: 565px; }
       .main .container .leftCol div {
         color: #0E385F;
         font-size: 20px;

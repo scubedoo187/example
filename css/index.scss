@@ -75,12 +75,10 @@ a {
     background-color: $blue;
 
     .topContent {
-        display: inline-block;
-        width: 63.5%;
-        margin: {
-            left: 18%;
-            right: 18%;
-        }
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        width: 980px;
+        margin: 0 auto;
 
         .left {
             float: left;
@@ -258,20 +256,17 @@ a {
 
 .main {
     position: relative;
-    width: 100%;
+    min-width: 980px;
     height: 592px;
     @include linear-gradient($white, $gray);
 
     .container {
-        width: 63.5%;
-        margin: {
-            left: 18%;
-            right: 18%;
-        }
+        width: 980px;
+        margin: 0 auto;
 
         .leftCol {
             float: left;
-            width: 61%;
+            width: 565px;
 
             div {
                 color: $textColor1;

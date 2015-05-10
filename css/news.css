@@ -9,19 +9,12 @@ header {
   height: 42px;
   background-color: #47639E;
   box-shadow: 0px 2px 1px #1C326C;
-  /* for minor version browser */
   background-color: #3B5998;
-  /* Mozilla Firefox */
   background-image: -moz-linear-gradient(#4E69A2, #3B5998);
-  /* Opera */
   background-image: -o-linear-gradient(#4E69A2, #3B5998);
-  /* Webkit (Safari 4+, Chrome 1+) */
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4E69A2), color-stop(1, #3B5998));
-  /* Webkit Chrome 11+ */
   background-image: -webkit-linear-gradient(#4E69A2, #3B5998);
-  /* IE10 */
   background-image: -ms-linear-gradient(#4E69A2, #3B5998);
-  /* W3C */
   background-image: linear-gradient(#4E69A2, #3B5998); }
   header .herder_content {
     margin-top: 2px;
