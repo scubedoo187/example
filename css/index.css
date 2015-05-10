@@ -342,7 +342,7 @@ a {
   text-transform: none;
   width: 194px; }
   .submit:hover {
-    background-color: #ddd; }
+    background-image: -webkit-linear-gradient(top, #79BC64, #578843); }
 
 .message {
   border-top-color: #A0A9C0;
@@ -386,6 +386,10 @@ footer {
     padding-left: 6px;
     padding-right: 6px;
     padding-bottom: 2px; }
+    footer .showMore:hover {
+      background-color: #6D84B4;
+      color: #FFFFFF;
+      text-decoration: none; }
   footer .contentInfo {
     margin-top: 10px;
     width: 980px; }

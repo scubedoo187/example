@@ -487,7 +487,7 @@ a {
     width: 194px;
 
     &:hover {
-        background-color: #ddd; // more brighter
+        background-image: -webkit-linear-gradient(top, #79BC64, #578843);
     }
 }
 
@@ -553,6 +553,12 @@ footer {
             left: 6px;
             right: 6px;
             bottom: 2px;
+        }
+
+        &:hover {
+            background-color: #6D84B4;
+            color: $white;
+            text-decoration: none;
         }
     }
 
