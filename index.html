@@ -52,25 +52,23 @@
       <div class="regist">
         <form action="post">
           <div class="inline-inputbox">
-            <input type="text" placeholder="성(姓)">
-          </div>
-          <div class="inline-inputbox">
-            <input type="text" placeholder="이름(성은 제외)">
+            <span class="left"><input class="inlinebox-shape" type="text" placeholder="성(姓)"></span>
+            <span class="right"><input class="inlinebox-shape" type="text" placeholder="이름(성은 제외)"></span>
           </div>
           <div class="inputbox">
-            <input type="email" placeholder="이메일 또는 휴대폰 번호">
+            <input class="inputbox-shape" type="email" placeholder="이메일 또는 휴대폰 번호">
           </div>
           <div class="inputbox">
-            <input type="email" placeholder="이메일 또는 휴대폰 번호 재입력">
+            <input class="inputbox-shape" type="email" placeholder="이메일 또는 휴대폰 번호 재입력">
           </div>
           <div class="inputbox">
-            <input type="password" placeholder="새 비밀번호">
+            <input class="inputbox-shape" type="password" placeholder="새 비밀번호">
           </div>
           <div>
             <div class="text2">생일</div>
             <div>
               <span>
-                <select id="year" name="birth_year" title="연도">
+                <select class="birth-box" id="year" name="birth_year" title="연도">
                   <option value="0" selected="1">연도</option>
                   <option value="2015">2015</option>
                   <option value="2014">2014</option>
@@ -173,7 +171,7 @@
                   <option value=""></option>
                   <option value=""></option>
                 </select>
-                <select id="month" name="birth_month" title="월">
+                <select class="birth-box" id="month" name="birth_month" title="월">
                   <option value="0" selected="1">월</option>
                   <option value="1">1월</option>
                   <option value="2">2월</option>
@@ -188,7 +186,7 @@
                   <option value="11">11월</option>
                   <option value="12">12월</option>
                 </select>
-                <select id="day" name="birth_day" title="일">
+                <select class="birth-box" id="day" name="birth_day" title="일">
                   <option value="0" selected="1">일</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -223,7 +221,7 @@
                   <option value="31">31</option>
                 </select>
               </span>
-              <a href="#">왜 생년월일을 입력해야 하나요?</a>
+              <a class="birth-policy" href="#">왜 생년월일을 입력해야 하나요?</a>
             </div>
           </div>
           <div class="radiobox">

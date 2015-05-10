@@ -189,40 +189,66 @@ a {
         font-size: 12px; }
       .main .container .rightCol .regist {
         display: block;
-        height: 471px;
+        height: auto;
         width: 399px; }
         .main .container .rightCol .regist .inline-inputbox {
-          display: inline-block;
-          width: 194px;
+          width: 399px;
+          height: 49px;
           box-sizing: border-box;
           color: #999;
           cursor: text;
-          height: 39px;
+          height: 49px;
           line-height: 24px;
           text-align: left;
           top: 0px;
           font-family: helvetica, arial, "lucida grande", sans-serif;
-          font-size: 18px;
-          padding-bottom: 8px;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding-top: 8px; }
+          font-size: 18px; }
+          .main .container .rightCol .regist .inline-inputbox .left {
+            margin-right: 6px;
+            margin-bottom: 10px;
+            display: inline-block; }
+          .main .container .rightCol .regist .inline-inputbox .right {
+            margin-bottom: 10px;
+            display: inline-block; }
+          .main .container .rightCol .regist .inline-inputbox .inlinebox-shape {
+            display: inline-block;
+            width: 172px;
+            height: 21px;
+            border: 1px solid #BDC7D8;
+            border-radius: 5px;
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px; }
         .main .container .rightCol .regist .inputbox {
           display: block;
           width: 399px;
           box-sizing: border-box;
           color: #999;
           cursor: text;
-          height: 39px;
+          height: 49px;
           line-height: 24px;
           text-align: left;
           top: 0px;
           font-family: helvetica, arial, "lucida grande", sans-serif;
-          font-size: 18px;
-          padding-bottom: 8px;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding-top: 8px; }
+          font-size: 18px; }
+          .main .container .rightCol .regist .inputbox .inputbox-shape {
+            width: 379px;
+            height: 21px;
+            border: 1px solid #BDC7D8;
+            border-radius: 5px;
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px; }
+        .main .container .rightCol .regist .birth-box {
+          border: 1px solid #BDC7D8;
+          padding: 5px;
+          background-color: #DDD; }
+        .main .container .rightCol .regist .birth-policy {
+          margin-left: 10px; }
         .main .container .rightCol .regist .radiobox {
           margin-top: 10px;
           height: 32px; }
@@ -251,6 +277,7 @@ a {
 .text2 {
   color: #141823;
   line-height: 28px;
+  margin-bottom: 5px;
   font-family: "Freight Sans Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size: 19px;
   font-weight: normal; }

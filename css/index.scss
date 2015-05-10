@@ -8,23 +8,29 @@ $textColor-top: #8A9CC0;
 $default-font: helvetica, arial, 'lucida grande', sans-serif;
 $fontset_1: 'Freight Sans Bold', 'lucida grande', tahoma, verdana, arial, sans-serif;
 
+@mixin boxshape {
+    border: 1px solid #BDC7D8;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: {
+        left: 10px;
+        right: 10px;
+        top: 8px;
+        bottom: 8px;
+    }
+}
+
 @mixin inputbox {
     box-sizing: border-box;
     color: #999;
     cursor: text;
-    height: 39px;
+    height: 49px;
     line-height: 24px;
     text-align: left;
     top: 0px;
     font: {
         family: $default-font;
         size: 18px;
-    }
-    padding: {
-        bottom: 8px;
-        left: 10px;
-        right: 10px;
-        top: 8px;
     }
 }
 
@@ -296,21 +302,57 @@ a {
                 }
 
             }
+
             .regist {
                 display: block;
-                height: 471px;
+                height: auto;
                 width: 399px;
 
                 .inline-inputbox {
-                    display: inline-block;
-                    width: 194px;
+                    width: 399px;
+                    height: 49px;
                     @include inputbox;
+
+                    .left {
+                        margin: {
+                            right: 6px;
+                            bottom: 10px;
+                        }
+                        display: inline-block;
+                    }
+                    .right {
+                        margin-bottom: 10px;
+                        display: inline-block;
+                    }
+
+                    .inlinebox-shape {
+                        display: inline-block;
+                        width: 172px;
+                        height: 21px;
+                        @include boxshape;
+                    }
                 }
                 .inputbox {
                     display: block;
                     width: 399px;
                     @include inputbox;
+
+                    .inputbox-shape {
+                        width: 379px;
+                        height: 21px;
+                        @include boxshape;
+                    }
                 }
+
+                .birth-box {
+                    border: 1px solid #BDC7D8;
+                    padding: 5px;
+                    background-color: #DDD;
+                }
+                .birth-policy {
+                    margin-left: 10px;
+                }
+
                 .radiobox {
                     margin-top: 10px;
                     height: 32px;
@@ -320,6 +362,7 @@ a {
                         margin-left: 4px;
                     }
                 }
+
                 .policy {
                     color: #777;
                     display: block;
@@ -353,6 +396,7 @@ a {
 .text2 {
     color: $black;
     line-height: 28px;
+    margin-bottom: 5px;
     font: {
         family: $fontset_1;
         size: 19px;
