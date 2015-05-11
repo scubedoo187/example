@@ -1,7 +1,14 @@
 $lightgray: #E9EAED;
+$gray: #D0D1D5;
 $blue: #47639E;
+$black: #000;
 $borderColor: #E1E2E3;
 $white: #FFFFFF;
+$default-font: helvetica, arial, 'lucida grande', sans-serif;
+
+$width-small: 900px;
+$width-medium: 1111px;
+$width-large: 1274px;
 
 @mixin linear-gradient($from, $to) {
     background-color: $to;
@@ -36,12 +43,14 @@ $white: #FFFFFF;
 }
 
 body {
-    font-family: helvetica, arial, 'lucida grande', sans-serif;
+    font-family: $default-font;
     background-color: $lightgray;
     margin: 0px;
 }
 
 header {
+    display: block;
+    direction: ltr;
     position: fixed;
     width: 100%;
     height: 42px;
@@ -49,93 +58,314 @@ header {
     box-shadow: 0px 2px 1px #1C326C;
     @include linear-gradient(#4E69A2, #3B5998);
 
-    .herder_content {
-        margin-top: 2px;
-        margin-left: 12%;
-        margin-right: 12%;
+    div {
+        padding: {
+            left: 1px;
+            right: 205px;
+        }
+        margin: 0 auto;
+        width: 960px;
+        height: 42px;
 
-        ul {
-            list-style-type: none;
-            margin: 0;
+        .herder_content {
+            display: inline-block;
             padding: 0;
+            width: 960px;
 
-            li {
-                display: inline-block;
-                margin: 0 0 0 0;
-                padding: 0 0 0 0;
-                border: 0;
+            .lfloat {
+                float: left;
+            }
+            .rfloat {
+                float: right;
             }
         }
     }
 }
 .main {
+    display: block;
+    margin: 0 auto;
     position: relative;
-    top: 43px;
-    margin-left: 12%;
-    margin-right: 12%;
+    top: 45px;
+    width: 976px;
+    padding-right: 205px;
+    direction: ltr;
 
     .container {
         position: relative;
+        display: block;
 
-        nav {
-            display: inline-block;
-            vertical-align: top;
-            width: 162px;
-            height: auto;
-            margin-top: 12px;
-            background-color: yellow;
-            box-sizing: border-box;
+        .leftCol {
+            padding: {
+                top: 13px;
+                left: 8px;
+            }
+            position: relative;
+            text-align: left;
+            font-size: 12px;
+            line-height: 16px;
+            display: block;
+            width: 164px;
+            height: 900px;
+            direction: ltr;
+            float: left;
 
-            ul {
-                li {
+            .welcome {
+                width: 164px;
+                height: 40px;
+                direction: ltr;
+
+                .userpic {
+                    float: left;
+                    margin-right: 8px;
+                }
+
+                .username {
+                    width: 116px;
+                    height: 40px;
+                    direction: ltr;
+
                     a {
+                        color: $black;
+                        display: block;
+                    }
+                }
+            }
 
+            .homeSidenav {
+                margin-top: 12px;
+                width: 164px;
+                height: 116px;
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        width: 188px;
+                        height: 24px;
+
+                        a {
+                            color: $black;
+                        }
+                    }
+                }
+            }
+
+            .listNav {
+                width: 164px;
+                height: 258px;
+
+                ul {
+                    margin: {
+                        top: 4px;
+                        bottom: 12px;
+                    }
+                    padding: 0;
+                    width: 188px;
+                    height: 240px;
+
+                    li {
+                        height: 24px;
+
+                        a {
+                            color: $black;
+                        }
                     }
                 }
             }
         }
-        .column {
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 12px;
-            margin-left: 10px;
-            width: 42.3%;
-            box-sizing: border-box;
+        .contentCol {
+            padding: {
+                left: 11px;
+                top: 12px;
+            }
+            margin-left: 172px;
+            min-height: 600px;
+            border-left: 0;
             @include window;
 
-            section {
-                margin-bottom: 12px;
-                background-color: $white;
+            .contentMain {
+                direction: ltr;
+                display: block;
+                padding: {
+                    left: 0;
+                    right: 10px;
+                    bottom: 20px;
+                }
+                float: left;
+                width: 496px;
+
+                .pagelet_composer {
+                    border: 1px solid $gray;
+                    border-radius: 3px;
+                    margin-bottom: 10px;
+                    width: 494px;
+                    height: 148px;
+                    background-color: $white;
+
+                    .fix {
+                        width: 494px;
+                        height: 33px;
+
+                        ul {
+                            margin: 0 12px;
+                            padding: 4px 0 2px 0;
+                            width: 470px;
+                            height: 26px;
+                            border-bottom: 1px solid;
+                            border-bottom-color: #E5E5E5;
+
+                            li {
+                                display: inline-block;
+                                font-size: 12px;
+                                height: 24px;
+                                margin-left: 5px;
+
+                                .leftpadding {
+                                    padding-left: 10px;
+                                    border-left: 1px solid;
+                                    border-color: #E5E5E5;
+                                }
+
+                                b {
+                                    color: $blue;
+                                }
+                            }
+                        }
+                    }
+
+                    .type_composer {
+                        width: 494px;
+                        height: 73px;
+
+                        div {
+                            padding: 5px;
+                            width: 484px;
+                            height: 63px;
+
+                            textarea {
+                                padding: 8px 7px 0 7px;
+                                width: 470px;
+                                height: 55px;
+                                font-size: 14px;
+                                font-family: $default-font;
+                                line-height: 18px;
+                                background: transparent;
+                                border: 0;
+                                outline: 0;
+                                resize: none;
+                            }
+                        }
+                    }
+
+                    .bottom_composer {
+                        border-top: 1px solid $lightgray;
+                        background-color: #F6F7F8;
+                        width: 494px;
+                        height: 40px;
+                        border-bottom: {
+                            left-radius: 3px;
+                            right-radius: 3px;
+                        }
+
+                        div {
+                            width: 494px;
+                            height: 40px;
+
+                            button{
+                                margin: 8px;
+                                padding: 0 16px;
+                                border: 1px solid #334C83;
+                                border-radius: 2px;
+                                background-color: #4E69A2;
+                                display: inline-block;
+                                cursor: pointer;
+                                line-height: 22px;
+                                color: $white;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rightCol {
+                padding: 0 7px 0 0;
+                width: 280px;
+                height: 647px;
+                direction: ltr;
+                float: right;
+                display: block;
                 @include window;
+
+                .padding {
+                    padding: 12px;
+                    border: 1px solid $gray;
+                    background-color: $white;
+
+                    .home_rightCol {
+                        width: auto;
+
+                        div {
+                            width: 254px;
+                            height: 12px;
+                            padding: 12px 0 0 0;
+                            border-top: 1px solid $lightgray;
+                            margin-top: 12px;
+
+                            h6 {
+                                margin: 0;
+                                width: 195px;
+                                height: 12px;
+                                color: #9197A3;
+                            }
+                        }
+
+                        ul {
+                            padding: 0;
+                            margin: 0;
+
+                            li{
+                                padding: 10px 0 6px 0;
+                                width: 254px;
+                                height: 56px;
+
+                                a {
+                                    color: $blue;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
-        .rightCol {
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 12px;
-            margin-left: 10px;
-            background-color: $white;
-            box-sizing: border-box;
-            width: 25%;
-            @include window;
-        }
-        .message {
-            display: inline-block;
+        .ChatsideBar {
             position: fixed;
             vertical-align: top;
             top: 44px;
             right: -1px;
             box-sizing: border-box;
-            width: 207px;
+            width: 205px;
             background-color: $lightgray;
             border: 1px solid #CCCCCC;
+        }
+    }
 
-            ul {
-                li {
-                    padding: 10px;
-                    box-sizing: border-box;
-                }
-            }
+    @media screen and (max-width: $width-large) {
+    }
+
+    @media screen and (max-width: $width-medium) {
+        .ChatsideBar {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $width-small) {
+        .ChatsideBar {
+            display: none;
+        }
+
+        .container .contentCol .rightCol {
+            display: none;
         }
     }
 }

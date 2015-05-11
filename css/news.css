@@ -1,9 +1,11 @@
 body {
-  font-family: helvetica, arial, 'lucida grande', sans-serif;
+  font-family: helvetica, arial, "lucida grande", sans-serif;
   background-color: #E9EAED;
   margin: 0px; }
 
 header {
+  display: block;
+  direction: ltr;
   position: fixed;
   width: 100%;
   height: 42px;
@@ -16,42 +18,88 @@ header {
   background-image: -webkit-linear-gradient(#4E69A2, #3B5998);
   background-image: -ms-linear-gradient(#4E69A2, #3B5998);
   background-image: linear-gradient(#4E69A2, #3B5998); }
-  header .herder_content {
-    margin-top: 2px;
-    margin-left: 12%;
-    margin-right: 12%; }
-    header .herder_content ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0; }
-      header .herder_content ul li {
-        display: inline-block;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-        border: 0; }
+  header div {
+    padding-left: 1px;
+    padding-right: 205px;
+    margin: 0 auto;
+    width: 960px;
+    height: 42px; }
+    header div .herder_content {
+      display: inline-block;
+      padding: 0;
+      width: 960px; }
+      header div .herder_content .lfloat {
+        float: left; }
+      header div .herder_content .rfloat {
+        float: right; }
 
 .main {
+  display: block;
+  margin: 0 auto;
   position: relative;
-  top: 43px;
-  margin-left: 12%;
-  margin-right: 12%; }
+  top: 45px;
+  width: 976px;
+  padding-right: 205px;
+  direction: ltr; }
   .main .container {
-    position: relative; }
-    .main .container nav {
-      display: inline-block;
-      vertical-align: top;
-      width: 162px;
-      height: auto;
-      margin-top: 12px;
-      background-color: yellow;
-      box-sizing: border-box; }
-    .main .container .column {
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 12px;
-      margin-left: 10px;
-      width: 42.3%;
-      box-sizing: border-box;
+    position: relative;
+    display: block; }
+    .main .container .leftCol {
+      padding-top: 13px;
+      padding-left: 8px;
+      position: relative;
+      text-align: left;
+      font-size: 12px;
+      line-height: 16px;
+      display: block;
+      width: 164px;
+      height: 900px;
+      direction: ltr;
+      float: left; }
+      .main .container .leftCol .welcome {
+        width: 164px;
+        height: 40px;
+        direction: ltr; }
+        .main .container .leftCol .welcome .userpic {
+          float: left;
+          margin-right: 8px; }
+        .main .container .leftCol .welcome .username {
+          width: 116px;
+          height: 40px;
+          direction: ltr; }
+          .main .container .leftCol .welcome .username a {
+            color: #000;
+            display: block; }
+      .main .container .leftCol .homeSidenav {
+        margin-top: 12px;
+        width: 164px;
+        height: 116px; }
+        .main .container .leftCol .homeSidenav ul {
+          padding: 0; }
+          .main .container .leftCol .homeSidenav ul li {
+            width: 188px;
+            height: 24px; }
+            .main .container .leftCol .homeSidenav ul li a {
+              color: #000; }
+      .main .container .leftCol .listNav {
+        width: 164px;
+        height: 258px; }
+        .main .container .leftCol .listNav ul {
+          margin-top: 4px;
+          margin-bottom: 12px;
+          padding: 0;
+          width: 188px;
+          height: 240px; }
+          .main .container .leftCol .listNav ul li {
+            height: 24px; }
+            .main .container .leftCol .listNav ul li a {
+              color: #000; }
+    .main .container .contentCol {
+      padding-left: 11px;
+      padding-top: 12px;
+      margin-left: 172px;
+      min-height: 600px;
+      border-left: 0;
       border-top: 1px #E1E2E3;
       border-left: 1px #E1E2E3;
       border-right: 1px #E1E2E3;
@@ -61,9 +109,88 @@ header {
       -webkit-box-shadow: 0, 1px, 2px, #D0D1D5;
       -moz-box-shadow: 0, 1px, 2px, #D0D1D5;
       box-shadow: 0, 1px, 2px, #D0D1D5; }
-      .main .container .column section {
-        margin-bottom: 12px;
-        background-color: #FFFFFF;
+      .main .container .contentCol .contentMain {
+        direction: ltr;
+        display: block;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        float: left;
+        width: 496px; }
+        .main .container .contentCol .contentMain .pagelet_composer {
+          border: 1px solid #D0D1D5;
+          border-radius: 3px;
+          margin-bottom: 10px;
+          width: 494px;
+          height: 148px;
+          background-color: #FFFFFF; }
+          .main .container .contentCol .contentMain .pagelet_composer .fix {
+            width: 494px;
+            height: 33px; }
+            .main .container .contentCol .contentMain .pagelet_composer .fix ul {
+              margin: 0 12px;
+              padding: 4px 0 2px 0;
+              width: 470px;
+              height: 26px;
+              border-bottom: 1px solid;
+              border-bottom-color: #E5E5E5; }
+              .main .container .contentCol .contentMain .pagelet_composer .fix ul li {
+                display: inline-block;
+                font-size: 12px;
+                height: 24px;
+                margin-left: 5px; }
+                .main .container .contentCol .contentMain .pagelet_composer .fix ul li .leftpadding {
+                  padding-left: 10px;
+                  border-left: 1px solid;
+                  border-color: #E5E5E5; }
+                .main .container .contentCol .contentMain .pagelet_composer .fix ul li b {
+                  color: #47639E; }
+          .main .container .contentCol .contentMain .pagelet_composer .type_composer {
+            width: 494px;
+            height: 73px; }
+            .main .container .contentCol .contentMain .pagelet_composer .type_composer div {
+              padding: 5px;
+              width: 484px;
+              height: 63px; }
+              .main .container .contentCol .contentMain .pagelet_composer .type_composer div textarea {
+                padding: 8px 7px 0 7px;
+                width: 470px;
+                height: 55px;
+                font-size: 14px;
+                font-family: helvetica, arial, "lucida grande", sans-serif;
+                line-height: 18px;
+                background: transparent;
+                border: 0;
+                outline: 0;
+                resize: none; }
+          .main .container .contentCol .contentMain .pagelet_composer .bottom_composer {
+            border-top: 1px solid #E9EAED;
+            background-color: #F6F7F8;
+            width: 494px;
+            height: 40px;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px; }
+            .main .container .contentCol .contentMain .pagelet_composer .bottom_composer div {
+              width: 494px;
+              height: 40px; }
+              .main .container .contentCol .contentMain .pagelet_composer .bottom_composer div button {
+                margin: 8px;
+                padding: 0 16px;
+                border: 1px solid #334C83;
+                border-radius: 2px;
+                background-color: #4E69A2;
+                display: inline-block;
+                cursor: pointer;
+                line-height: 22px;
+                color: #FFFFFF;
+                float: right; }
+      .main .container .contentCol .rightCol {
+        padding: 0 7px 0 0;
+        width: 280px;
+        height: 647px;
+        direction: ltr;
+        float: right;
+        display: block;
         border-top: 1px #E1E2E3;
         border-left: 1px #E1E2E3;
         border-right: 1px #E1E2E3;
@@ -73,36 +200,49 @@ header {
         -webkit-box-shadow: 0, 1px, 2px, #D0D1D5;
         -moz-box-shadow: 0, 1px, 2px, #D0D1D5;
         box-shadow: 0, 1px, 2px, #D0D1D5; }
-    .main .container .rightCol {
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 12px;
-      margin-left: 10px;
-      background-color: #FFFFFF;
-      box-sizing: border-box;
-      width: 25%;
-      border-top: 1px #E1E2E3;
-      border-left: 1px #E1E2E3;
-      border-right: 1px #E1E2E3;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
-      -webkit-box-shadow: 0, 1px, 2px, #D0D1D5;
-      -moz-box-shadow: 0, 1px, 2px, #D0D1D5;
-      box-shadow: 0, 1px, 2px, #D0D1D5; }
-    .main .container .message {
-      display: inline-block;
+        .main .container .contentCol .rightCol .padding {
+          padding: 12px;
+          border: 1px solid #D0D1D5;
+          background-color: #FFFFFF; }
+          .main .container .contentCol .rightCol .padding .home_rightCol {
+            width: auto; }
+            .main .container .contentCol .rightCol .padding .home_rightCol div {
+              width: 254px;
+              height: 12px;
+              padding: 12px 0 0 0;
+              border-top: 1px solid #E9EAED;
+              margin-top: 12px; }
+              .main .container .contentCol .rightCol .padding .home_rightCol div h6 {
+                margin: 0;
+                width: 195px;
+                height: 12px;
+                color: #9197A3; }
+            .main .container .contentCol .rightCol .padding .home_rightCol ul {
+              padding: 0;
+              margin: 0; }
+              .main .container .contentCol .rightCol .padding .home_rightCol ul li {
+                padding: 10px 0 6px 0;
+                width: 254px;
+                height: 56px; }
+                .main .container .contentCol .rightCol .padding .home_rightCol ul li a {
+                  color: #47639E; }
+    .main .container .ChatsideBar {
       position: fixed;
       vertical-align: top;
       top: 44px;
       right: -1px;
       box-sizing: border-box;
-      width: 207px;
+      width: 205px;
       background-color: #E9EAED;
       border: 1px solid #CCCCCC; }
-      .main .container .message ul li {
-        padding: 10px;
-        box-sizing: border-box; }
+  @media screen and (max-width: 1111px) {
+    .main .ChatsideBar {
+      display: none; } }
+  @media screen and (max-width: 900px) {
+    .main .ChatsideBar {
+      display: none; }
+    .main .container .contentCol .rightCol {
+      display: none; } }
 
 ul {
   list-style-type: none; }
